@@ -9,7 +9,6 @@ import App from './App'
 
 ReactDOM.render(<App store={store} />,document.getElementById('root'))
 
-// 用于检测redux中状态的变化，一旦状态变化，就调用subscribe所指定的回调
 store.subscribe(() => {
   ReactDOM.render(<App store={store} />,document.getElementById('root'))
 })
